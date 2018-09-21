@@ -1,0 +1,11 @@
+h1, h3 {
+	font-size: 75px;
+	text-align: center;
+	display: inline-block;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+}
+
+news-img {
+	
+}
