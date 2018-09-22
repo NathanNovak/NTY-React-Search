@@ -13,8 +13,12 @@ router.get("/articles", (req, res) => {
     .catch(err => res.status(422).json(err));
 });
 
-router.route("/")
+router.route("/saved")
   .get(articleController.findAll)
   .post(articleController.create);
 
+  router
+  .route("/saved/:id")
+  .get(articleController.findById)
+  .delete(articleController.remove);
 module.exports = router;

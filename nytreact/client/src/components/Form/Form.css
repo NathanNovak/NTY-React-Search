@@ -1,0 +1,15 @@
+.button{
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.input{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+label{
+	font-weight: bold;
+	font-family: 'Abril Fatface', cursive;
+	font-size: 16px;
+}

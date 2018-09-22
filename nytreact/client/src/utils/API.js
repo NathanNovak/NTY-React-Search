@@ -10,5 +10,18 @@ export default {
 				startDate: query.startDate, 
 				endDate: query.endDate,
 			  }});
-	}
+	},
+
+	// Saves a book to the database
+  saveArticle: function (article) {
+		console.log("Saved Article", article);
+    return axios.post("/api/saved", article);
+	},
+	getSavedArticle: function () {
+		return axios.get("/api/saved");
+	},
+	deleteArticle: function(id) {
+		console.log("Article ID", id._id);
+    return axios.delete("/api/saved/" + id._id);
+  }
 };							

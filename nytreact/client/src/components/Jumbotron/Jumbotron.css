@@ -1,0 +1,9 @@
+.banner{
+	background: url('../../images/NYTimes-banner.jpg') no-repeat center;
+	height: 300;
+	clear: both;
+	padding-top: 250px;
+	text-align: center;
+	font-family: 'Abril Fatface', cursive;
+}
+
