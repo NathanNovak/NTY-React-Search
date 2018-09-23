@@ -17,12 +17,13 @@ if (process.env.NODE_ENV === "production") {
 app.use("/api", routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/nytreact");
+
 
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
-// mongoose.Promise = Promise;
-// mongoose.connect(MONGODB_URI);
+// Connect to the Mongo DB
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/nytreact");
+mongoose.Promise = global.Promise;
 
 // Send every request to the React app
 // Define any API routes before this runs
