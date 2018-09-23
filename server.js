@@ -19,6 +19,11 @@ app.use("/api", routes);
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/nytreact");
 
+// Set mongoose to leverage built in JavaScript ES6 Promises
+// Connect to the Mongo DB
+// mongoose.Promise = Promise;
+// mongoose.connect(MONGODB_URI);
+
 // Send every request to the React app
 // Define any API routes before this runs
 // app.get("*", function(req, res) {
